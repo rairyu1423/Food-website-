@@ -1,0 +1,47 @@
+
+
+.header{
+    position: relative;
+    text-align: center;
+}
+.search-bar{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    padding-top: 100px;
+   
+}
+.search-bar input[type="search"]{
+    width: 300px;
+    height: 40px;
+    padding: 100px;
+    font-size: 16px;
+    
+}
+.button{
+    position: absolute;
+    top: 0px;
+    right: -36%;
+    z-index: 1;
+    padding-top: 100px;
+}
+.food{
+    padding-top: 200px;
+}
+.r-image {
+    width: 200px;  
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-left: 20px;
+}
+h3{
+    margin-left: 250px;
+    
+}
+.container {
+    display: flex;
+    align-items: center; 
+}
