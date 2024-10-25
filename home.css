@@ -14,6 +14,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 50px;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +78,8 @@ section {
     z-index: 1;
     content: '';
     position: absolute;
-    background: rgba(255, 255, 255, 0.1); /* Slight transparent overlay */
+    /* background: rgba(255, 255, 255, 0.1); //Slight transparent overlay */
+    background: rgba(103, 98, 98, 0.2);
     width: 100%;
     height: 100%;
     top: 0;
