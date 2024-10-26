@@ -104,40 +104,67 @@ body {
   background-color: #000;
 }
 #main-content-upper {
-  padding-top: 12vh; /* Add some top padding to avoid content being hidden behind the nav */
+  padding-top: 12vh; 
   max-width: 1000px;
   margin: auto;
   color: #f8f8f8;
   background-color: #000;
 }
-img {
-  margin-left: 250px;
+div [class=img1]{
+  margin-left: 350px;
+  background-blend-mode: color;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+div [class=img2]{
+  
+  margin-left: 500px;
+  background-blend-mode: color;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+div [class=img3]{
+
+  margin-left: 650px;
+  background-blend-mode: color;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+div [class=img4]{
+  margin-left: 600px;
+  background-blend-mode: color;
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+div [class=img5]{
+  top: 250px;
+  margin-left: 580px;
   background-blend-mode: color;
   border-radius: 15px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.ad {
+.ad-1 {
   position: absolute;
-  top: 250px; /* Adjusted to move text higher */
+  top: 250px; 
   left: 250px;
   color: #f8f8f8;
 }
 
-.ad-desc {
+.ad-desc-1 {
   position: absolute;
-  top: 350px; /* Adjusted to move text higher */
+  top: 350px; 
   left: 250px;
   color: #f8f8f8;
 }
-.button-container {
+.button-container-1 {
   position: absolute;
-  top: 420px; /* Adjusted to position the button below ad-desc */
+  top: 420px; 
   left: 250px;
   text-align: center;
 }
 
-.recipe-button {
+.recipe-button-1 {
   background-color: black;
   color: white;
   border: 2px solid white;
@@ -147,14 +174,149 @@ img {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.recipe-button:hover {
+.recipe-button-1:hover {
   background-color: white;
   color: black;
 }
 
 .logo-img {
-  width: 50px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 50px;
+  height: auto; 
   display: block;
   margin: auto;
+}
+.ad-2 {
+  position: absolute;
+  top: 850px; 
+  left: 250px;
+  color: #f8f8f8;
+}
+
+.ad-desc-2 {
+  position: absolute;
+  top: 950px; 
+  left: 250px;
+  color: #f8f8f8;
+}
+
+
+.recipe-button-2 {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-container-2 {
+  position: absolute;
+  top: 70px; 
+  text-align: center;
+}
+.recipe-button-2:hover {
+  background-color: white;
+  color: black;
+}
+.ad-3 {
+  position: absolute;
+  top: 1430px; 
+  left: 250px;
+  color: #f8f8f8;
+}
+
+.ad-desc-3 {
+  position: absolute;
+  top: 1540px; 
+  left: 250px;
+  color: #f8f8f8;
+}
+.button-container-3 {
+  position: absolute;
+  top: 1620px; 
+  left: 250px;
+  text-align: center;
+}
+
+.recipe-button-3{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.recipe-button-3:hover {
+  background-color: white;
+  color: black;
+}
+.ad-4 {
+  position: absolute;
+  top: 2020px;
+  left: 250px;
+  color: #f8f8f8;
+}
+
+.ad-desc-4 {
+  position: absolute;
+  top: 2135px; 
+  left: 250px;
+  color: #f8f8f8;
+}
+.button-container-4 {
+  position: absolute;
+  top: 2215px; 
+  left: 250px;
+  text-align: center;
+}
+
+.recipe-button-4 {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.recipe-button-4:hover {
+  background-color: white;
+  color: black;
+}
+.ad-5 {
+  position: absolute;
+  top: 2570px;
+  left: 250px;
+  color: #f8f8f8;
+}
+
+.ad-desc-5 {
+  position: absolute;
+  top: 2670px; 
+  left: 250px;
+  color: #f8f8f8;
+}
+.button-container-5 {
+  position: absolute;
+  top: 2745px; 
+  left: 250px;
+  text-align: center;
+}
+
+.recipe-button-5 {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.recipe-button-5:hover {
+  background-color: white;
+  color: black;
 }
