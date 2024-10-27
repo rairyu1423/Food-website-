@@ -190,3 +190,19 @@ tl.fromTo(
   { x: 0, duration: 1, stagger: 1, ease: "power2.out", delay: 1, opacity: 1 },
   "same2"
 );
+
+
+//! adding swiper js
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
