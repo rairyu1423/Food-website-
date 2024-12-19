@@ -1,0 +1,49 @@
+*{
+    text-decoration: none;
+}
+.bg{
+    background-image: url("blob.png"); height: 600px; position: relative; border: 2px; border-radius: 15px; 
+}
+
+
+.navbar{
+     font-family: arial; padding-right: 15px; padding-left: 15px;
+}
+.nav-div{
+    display: flex; align-items: center; justify-content: space-between;
+}
+.srch{
+    float: left; padding: 6px; border-radius: 20px; font-size: 15px; margin-right: 100px; margin-left: 5px; width: 500px; border-style: none;   }
+.logo a {
+    font-size: 35px; font-weight: 600; color: rgb(255, 255, 255)
+}
+li{
+    list-style: none; display: inline-block;
+}
+li a{
+    color: rgb(254, 254, 254); font-size: 18px; font-weight: bold; margin-right: 35px; transition: 0.15s;
+}
+li a:hover{
+    color: yellow;
+}
+.f-items {
+     display: flex; justify-content: space-between; align-items: flex-start; padding-left: 90px; padding-right: 90px;padding-top: 20px;padding-bottom: 50px;   gap: 15px; margin-top: 10px;
+}
+.f {
+    display: inline-block; width: 30%; background-color: rgb(223, 237, 207); padding: 5px; border: 2px solid rgb(211, 207, 207);border-radius: 10px; text-align: center;box-sizing: border-box; 
+}
+.f img{
+    width: 100%; height: auto; border-radius: 6px; margin-bottom: 6px; 
+}
+.f .desc{
+    font-size: 16px; color:black; margin-bottom: 15px; 
+}
+
+
+.f .but {
+    padding: 10px 20px; background-color: rgb(172, 172, 116); color: rgb(255, 255, 255); font-weight: 900; border: 2px solid rgb(152, 152, 152); border-radius: 5px; cursor: pointer; font-size: 14px;
+      
+}
+.f .but:hover{ 
+    background-color: rgb(251, 127, 82);
+}
