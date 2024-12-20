@@ -1,25 +1,4 @@
 //! GSAP for Home page
-let tl2 = gsap.timeline();
-tl2.from(
-  ".animateImage",
-  {
-    x: 1000,
-    ease: "power3.out",
-    duration: 2,
-  },
-  "same"
-);
-
-tl2.from(
-  ".animateAd",
-  {
-    x: -1000,
-    duration: 2,
-    stagger: 0.5,
-  },
-  "same"
-);
-
 gsap.to(".animateImage", {
   y: 10,
   repeat: -1,
@@ -61,6 +40,29 @@ gsap.to(".animateImage4", {
   ease: "sine.in",
 });
 
+gsap.from(".animateImage", {
+  x: 800,
+  ease: "power3.out",
+  duration: 1,
+  // scrollTrigger: "#main-content-upper2 .animateImage",
+  scrollTrigger: {
+    trigger: "#main-content-upper1",
+    // markers:true,
+    start: "top 40%",
+  },
+});
+
+gsap.from(".animateAd", {
+  x: -1000,
+  duration: 1,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#main-content-upper1",
+    // markers:true,
+    start: "top 40%",
+  },
+});
+
 gsap.from(".animateImage1", {
   x: -800,
   ease: "power3.out",
@@ -69,7 +71,7 @@ gsap.from(".animateImage1", {
   scrollTrigger: {
     trigger: "#main-content-upper2",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -80,7 +82,7 @@ gsap.from(".animateAd2", {
   scrollTrigger: {
     trigger: "#main-content-upper2",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -92,7 +94,7 @@ gsap.from(".animateImage2", {
   scrollTrigger: {
     trigger: "#main-content-upper3",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -103,7 +105,7 @@ gsap.from(".animateAd3", {
   scrollTrigger: {
     trigger: "#main-content-upper3",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -115,7 +117,7 @@ gsap.from(".animateImage3", {
   scrollTrigger: {
     trigger: "#main-content-upper4",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -126,7 +128,7 @@ gsap.from(".animateAd4", {
   scrollTrigger: {
     trigger: "#main-content-upper4",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -138,7 +140,7 @@ gsap.from(".animateImage4", {
   scrollTrigger: {
     trigger: "#main-content-upper5",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -149,7 +151,7 @@ gsap.from(".animateAd5", {
   scrollTrigger: {
     trigger: "#main-content-upper5",
     // markers:true,
-    start: "top 20%",
+    start: "top 40%",
   },
 });
 
@@ -160,7 +162,7 @@ const tl = gsap.timeline();
 
 tl.fromTo(
   header,
-  { y: -200 }, // Start position
+  { y: -210 }, // Start position
   { y: 0, duration: 1, ease: "power2.out" } // End position
 );
 
@@ -177,7 +179,14 @@ tl.fromTo(
     x: -1000,
     opacity: 0,
   },
-  { x: 0, duration: 1, stagger: 1, ease: "power2.out", delay: 1, opacity: 1 },
+  {
+    x: 0,
+    duration: 1,
+    stagger: 1,
+    ease: "power2.out",
+    delay: 0.55,
+    opacity: 1,
+  },
   "same2"
 );
 
@@ -191,12 +200,36 @@ tl.fromTo(
   "same2"
 );
 
+// !  Suggestion box
+let items = document.querySelector(".items");
+let sugbox = document.querySelector(".suggetion");
 
-//! adding swiper js
+items.addEventListener("mouseenter", () => {
+  sugbox.style.opacity = "1";
+  sugbox.style.pointerEvents = "auto";
+  items.addEventListener("mouseenter", () => {
+    sugbox.style.opacity = "1";
+    sugbox.style.pointerEvents = "auto";
+  });
+});
+sugbox.addEventListener("mouseleave", () => {
+  sugbox.style.opacity = "0";
+  sugbox.style.pointerEvents = "none";
+});
+
+window.addEventListener("click", () => {
+  sugbox.style.opacity = "0";
+  sugbox.style.pointerEvents = "none";
+});
+// ! End of suggetion box
+// ! Swiper for review
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
