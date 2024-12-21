@@ -10,6 +10,10 @@ body {
   background-color: #f1f2f4;
   overflow-x: hidden;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* Nav Bar start css*/
 .page1Header {
