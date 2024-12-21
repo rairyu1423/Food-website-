@@ -226,8 +226,11 @@ window.addEventListener("click", () => {
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
+  loop: true, // Enable infinite loop
+  slidesOffsetBefore: 1, // Start from the very beginning
+  slidesPerView: 2, // Show 2 slides at a time
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -239,3 +242,4 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+// ! Swiper end for review
