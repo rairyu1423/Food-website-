@@ -7,13 +7,12 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  /* position: relative; */
   background-color: #f1f2f4;
   overflow-x: hidden;
+  user-select: none;
 }
 /* Nav Bar start css*/
 .page1Header {
-  /* z-index: ; */
   top: 0;
   left: 0;
   width: 100%;
@@ -176,7 +175,8 @@ body {
   align-items: center;
 }
 .left {
-  padding: 50px;
+  padding-left: 50px;
+  padding-top: 60px;
   background-color: black;
   width: 50%;
   height: inherit;
@@ -309,7 +309,7 @@ body {
   align-items: center;
 }
 .card .rating i {
-  color: rgba(246, 218, 14, 0.797);
+  color: rgba(247, 166, 5, 0.797);
   margin-right: 3px;
 }
 .card .rating .place {
@@ -340,6 +340,7 @@ body {
   background-color: rgba(234, 190, 237, 0.915);
   font-size: 12px;
   color: rgba(103, 6, 109, 0.915);
+  cursor: pointer;
 }
 .recipie {
   padding: 3px 12px;
@@ -348,6 +349,7 @@ body {
   background-color: rgb(177, 237, 190);
   font-size: 12px;
   color: rgb(4, 91, 23);
+  cursor: pointer;
 }
 .heading i {
   margin-right: 30px;
@@ -372,7 +374,7 @@ body {
   bottom: 100px;
   color: yellow;
   height: 40px;
-  width: 120px;
+  width: 150px;
   background: linear-gradient(
     to right,
     rgba(111, 111, 250, 0.847) 20%,
@@ -384,7 +386,7 @@ body {
   padding-right: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 20px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -395,23 +397,40 @@ body {
 /* review SWIPER css */
 .wrapper {
   width: 100vw;
-  height: 65vh;
-  background-color: rgba(249, 35, 35, 0.258);
+  height: 70vh;
+  background-color: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+  /* background-color: pink; */
+}
+.wrapperHeading {
+  width: 100%;
+  height: 50px;
+  font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  /* background-color: red; */
 }
 .swiper {
-  width: 50vw;
-  height: 60vh;
+  width: 80vw;
+  height: 50vh;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  border: 4px solid rgba(46, 45, 45, 0.405);
 }
 
 .swiper-slide img {
@@ -419,6 +438,92 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(26, 50, 231);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-next::after {
+  content: "➨"; /* Replace with your preferred character */
+  font-size: 30px;
+  color: white;
+  font-weight: 1000;
+}
+.swiper-button-prev::after {
+  content: "➨"; /* Replace with your preferred character */
+  font-size: 30px;
+  color: white;
+  font-weight: 1000;
+  rotate: 180deg;
+}
+
+.picturecoustomer {
+  width: 100%;
+  height: 32%;
+  /* background-color: red; */
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.picture {
+  width: 17%;
+  height: 100%;
+  /* background-color: blue; */
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+.namecoustomer {
+  width: 70%;
+  height: 100%;
+  text-transform: uppercase;
+  /* background-color: purple; */
+  text-align: left;
+}
+.coustomerreview {
+  width: 100%;
+  height: 65%;
+  /* background-color: aqua; */
+  text-align: left;
+  padding: 35px;
+  font-size: 16px;
+  font-family: Geneva, Verdana, sans-serif;
+}
+.nameCoustomer {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.locationcoustomer i {
+  color: rgb(240, 49, 243);
+  margin-right: 3px;
+}
+.locationcoustomer {
+  font-size: 15px;
+  font-weight: 500;
+}
+.cousrating i {
+  color: rgb(232, 192, 14);
+  margin-right: 3px;
+}
+
+.cousrating {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.coustomerreview span {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(151, 47, 10);
 }
 
 /* Review part end */
@@ -514,7 +619,7 @@ body {
 h5 span {
   color: rgb(129, 215, 129);
 }
-h5 i{
+h5 i {
   color: palevioletred;
   margin-right: 5px;
 }
