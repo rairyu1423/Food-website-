@@ -1,0 +1,275 @@
+if gsap animation failled in index.js for card use this
+
+// 
+/*gsap.fromTo(
+  ".bkcart3",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart1",
+      // markers: true,
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+gsap.fromTo(
+  ".bkcart4",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart2",
+      // markers: true,
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+gsap.fromTo(
+  ".bkcart5",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart3",
+      // markers: true,
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+gsap.fromTo(
+  ".bkcart6",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart4",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart7",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart5",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart8",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart6",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart9",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart7",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart10",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart8",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart11",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart9",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart12",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart10",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart13",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart11",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart14",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart12",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart15",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart13",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart16",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart14",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart17",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart15",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart18",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart16",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+
+gsap.fromTo(
+  ".bkcart19",
+  { opacity: 0, scale: 0.8, x: 3 },
+  {
+    opacity: 1,
+    duration: 0.4,
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".bkcart17",
+      start: "80% 10%",
+      end: "90% 90%",
+      scrub: 1,
+    },
+  }
+);
+*/
