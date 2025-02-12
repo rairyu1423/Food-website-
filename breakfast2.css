@@ -182,6 +182,7 @@ body {
 }
 
 .f {
+   height: 400px;
   display: inline-block;
   width: 35%;
   background-color: #ffd591;
