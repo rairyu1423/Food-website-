@@ -396,6 +396,8 @@ const scroll = new LocomotiveScroll({
   el: document.querySelector(".parent"),
   smooth: true,
 });
-if (window.innerWidth <= 800) {
-  alert("Warning: This website is not optimized for mobile devices.Open it to the Laptop or P.C. for Better Experiences");
-}
+window.addEventListener("load", function () {
+  if (window.innerWidth <= 800) {
+    alert("Warning: This website is not optimized for mobile devices. Open it on a laptop or PC for a better experience.");
+  }
+});
